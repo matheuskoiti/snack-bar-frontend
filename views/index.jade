@@ -1,0 +1,15 @@
+extends layout
+link(href='public/stylesheets/style.css', rel='stylesheet')
+
+block content
+  .title
+    h1= title
+  .sub-title
+    p Seja bem vindo à #{title}
+
+  #order
+    a(href="/order")
+      button(type="button") Faça seu pedido
+
+    a(href="/custom")
+      button(type="button") Monte o seu lanche

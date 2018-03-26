@@ -1,0 +1,12 @@
+extends layout
+link(href='public/stylesheets/style.css', rel='stylesheet')
+
+block content
+  .title
+    h1= title
+  .sub-title
+    p O valor do seu pedido é R$: #{finalValue}
+
+  #order
+    a(href="/")
+      button(type="button") Finalizar pedido

@@ -1,0 +1,30 @@
+extends layout
+link(href='public/stylesheets/style.css', rel='stylesheet')
+
+block content
+    form(method="POST", action="/order/value")
+        div
+            table
+                thead   
+                    .form-title
+                        h1= title  
+                tbody
+                    for snack in snacks
+                        tr
+                            td
+                                .item-order
+                                    p #{snack.name}
+                                    input(type="hidden", name="lanche", value="#{snack.name}")
+                                .item-description
+                                    each ingredient, index in snack.ingredients
+                                        if index === snack.ingredients.length -1
+                                            | #{ingredient.name}
+                                        else
+                                            | #{ingredient.name},   
+                            td 
+                                .item-quantity
+                                    p Quantidade:
+                                    input(type="number", name="quantidade", min="0", max="99")
+        .button
+            input(type="submit", value="Continuar")
+

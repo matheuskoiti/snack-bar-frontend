@@ -1,0 +1,70 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.title {
+  color: crimson;
+  font-size: 50px;
+  padding-left: 420px;
+}
+
+.sub-title {
+  font-size: 25px;
+  padding-left: 500px;
+  padding-bottom: 40px;
+}
+
+#order {
+  padding-left: 530px;  
+}
+
+.form-title {
+  color: crimson;
+  font-size: 20px;
+}
+
+.item-order {
+  font-size: 25px;
+}
+
+.item {
+  font-size: 25px;
+  padding-right: 350px;
+}
+
+
+.item-description {
+  font-size: 15px;
+}
+
+.item-quantity {
+  font-size: 18px;
+  padding-left: 250px;
+}
+
+.item-quantity-custom {
+  font-size: 18px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 50%;
+}
+
+th, td {
+  padding: 0.25rem;
+  text-align: left;
+}
+
+tbody tr:nth-child(odd) {
+  background: #eee;
+}
+
+.button {
+  padding-top: 30px;
+}

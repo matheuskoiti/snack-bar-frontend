@@ -1,0 +1,24 @@
+extends layout
+link(href='public/stylesheets/style.css', rel='stylesheet')
+
+block content
+    form(method="POST", action="/custom/value")
+        div
+            table
+                thead   
+                    .form-title
+                        h1= title  
+                tbody
+                    for ingredient in ingredients
+                        tr
+                            td
+                                .item
+                                    p #{ingredient.name}
+                                    input(type="hidden", name="ingrediente", value="#{ingredient.name}")
+                            td                                
+                                .item-quantity-custom
+                                    p Quantidade:
+                                    input(type="number", name="quantidade", min="0", max="99")
+        .button
+            input(type="submit", value="Continuar")
+
